@@ -20,12 +20,12 @@ export default async function Home() {
         <div>
           <h1 className={styles.title}>Portfolio</h1>
           <p className={styles.description}>
-            これはああああのポートフォリオです。
+            これは大塚のポートフォリオです。
           </p>
         </div>
         <Image
           className={styles.bgimg}
-          src="/img-mv.jpg"
+          src="/haikei.jpg"
           alt=""
           width={4000}
           height={1200}
