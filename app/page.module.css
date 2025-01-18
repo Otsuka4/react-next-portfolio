@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.203);
   color: #fff;
   overflow: hidden;
   padding: 200px 0;
@@ -93,3 +93,4 @@
     margin-top: 16px;
   }
 }
+

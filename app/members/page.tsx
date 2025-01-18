@@ -2,33 +2,34 @@ import Image from 'next/image';
 import { getMembersList } from '@/app/_libs/microcms';
 import { MEMBERS_LIST_LIMIT } from '@/app/_constants';
 import styles from './page.module.css';
+import { Key, ReactElement, JSXElementConstructor, ReactNode, ReactPortal, AwaitedReactNode } from 'react';
 
 export default async function Page() {
-  const data = await getMembersList({ limit: MEMBERS_LIST_LIMIT });
+  // microCMSからブログ投稿を取得
+const blogPosts = await getMembersList({ limit : MEMBERS_LIST_LIMIT});
+
   return (
     <div className={styles.container}>
-      {data.contents.length === 0 ? (
-        <p className={styles.empty}>メンバーが登録されていません。</p>
-      ) : (
-        <ul>
-          {data.contents.map((member) => (
-            <li key={member.id} className={styles.list}>
-              <Image
-                src={member.image.url}
-                alt=""
-                width={member.image.width}
-                height={member.image.height}
-                className={styles.image}
-              />
-              <dl>
-                <dt className={styles.name}>{member.name}</dt>
-                <dd className={styles.position}>{member.position}</dd>
-                <dd className={styles.profile}>{member.profile}</dd>
-              </dl>
-            </li>
-          ))}
-        </ul>
-      )}
+      {/* 自己紹介セクション */}
+      <section className={styles.introSection}>
+        <h1 className={styles.title}>こんにちは！私の自己紹介ブログへようこそ</h1>
+        <div className={styles.introContent}>
+          <Image
+            src="/profile.jpg"  // プロフィール画像を設定
+            alt="プロフィール画像"
+            width={150}
+            height={150}
+            className={styles.profileImage}
+          />
+          <div className={styles.introText}>
+            <p>
+              こんにちは！私は[名前]です。このブログでは私の日常や趣味、考えをシェアしています。
+              私はプログラミング、旅行、音楽、映画が大好きです。日々の生活の中で気になったことや、
+              学んだことをここで書いていきますので、どうぞよろしくお願いします！
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

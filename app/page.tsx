@@ -1,5 +1,3 @@
-//members = プロフィールページ
-
 import styles from './page.module.css'
 import Image from 'next/image'
 
@@ -20,7 +18,7 @@ export default async function Home() {
         <div>
           <h1 className={styles.title}>Portfolio</h1>
           <p className={styles.description}>
-            これは大塚のポートフォリオです。
+            これはotsukaのポートフォリオです。
           </p>
         </div>
         <Image
