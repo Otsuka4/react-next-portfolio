@@ -1,13 +1,7 @@
 import Image from 'next/image';
-import { getMembersList } from '@/app/_libs/microcms';
-import { MEMBERS_LIST_LIMIT } from '@/app/_constants';
 import styles from './page.module.css';
-import { Key, ReactElement, JSXElementConstructor, ReactNode, ReactPortal, AwaitedReactNode } from 'react';
 
-export default async function Page() {
-  // microCMSからブログ投稿を取得
-const blogPosts = await getMembersList();
-
+export default function Page() {
   return (
     <div className={styles.container}>
       {/* 自己紹介セクション */}
@@ -23,33 +17,41 @@ const blogPosts = await getMembersList();
           />
           <div className={styles.introText}>
             <p>
-              こんにちは！私は　大塚 由華　です。<br />
+              こんにちは！私は　ああああ　です。<br />
               このページでは自己紹介や私の趣味を紹介しています。<br />
               どうぞよろしくお願いします！<br />
             </p>
 
-            <h2>自己紹介</h2>
-            <p>
-              私は、滋賀県出身の専門学生です。<br />
-              専門学校では情報セキュリティを学んでいます。<br />
-              <br />
-            </p>
+            <div className={styles.section}>
+              <h2 className={styles.sectionTitle}>自己紹介</h2>
+              <p>
+                名前：ああああ<br />
+                出身：滋賀県<br />
+                職業：専門学生<br />
+                学校名：京都デザイン&テクノロジー専門学校<br />
+                学んでいること：情報セキュリティ<br />
+                趣味：読書、ゲーム、音楽鑑賞<br />
+              </p>
+            </div>
 
-            <h2>学んでいること</h2>
-            <p>
-              現在、専門学校で情報セキュリティについて学んでいます。<br />
-              セキュリティについて学ぶきっかけは、小学生の時、友達の親が乗っ取りにあい、私の家にもカードを買ってきて欲しい。
-              とメールが届き、とても怖い思いをしたからです。<br />
-              今後は、セキュリティの知識を活かして、被害を少しでも減らす仕事をしたいと思っています。<br />
-            </p>
+            <div className={styles.section}>
+              <h2 className={styles.sectionTitle}>学んでいることについて</h2>
+              <p>
+                現在、専門学校で情報セキュリティについて学んでいます。<br />
+                セキュリティに関して興味を持ったのは、小学生の時です。<br/>
+                友達の親が乗っ取りにあい、私の家にもカードを買ってきて欲しい。
+                というメールが届き、とても怖い思いをしたことがきっかけです。<br />
+              </p>
+            </div>
 
-            <h2>趣味</h2>
-            <p>
-              趣味は、読書とゲーム、音楽を聴くことです。<br />
-              特に、ミステリー小説や長編小説が好きです。<br />
-              ゲームはホヨバースのゲーム、音楽はボカロやバンドなど色々聴いています。<br />
-              おすすめの物があればぜひ教えてください！<br />
-            </p>
+            <div className={styles.section}>
+              <h2 className={styles.sectionTitle}>趣味について</h2>
+              <p>
+                趣味は、読書とゲーム、音楽を聴くことです。<br />
+                特に、ミステリー小説や長編小説が好きです。<br />
+                ゲームはホヨバースのゲーム、音楽はボカロやバンドなど色々聴いています。<br />
+              </p>
+            </div>
           </div>
         </div>
       </section>

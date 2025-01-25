@@ -1,78 +1,81 @@
-.text {
-    text-align: center;
-    margin-bottom: 40px;
+/* 全体のレイアウト設定 */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 自己紹介セクション */
+.introSection {
+  padding: 40px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* プロフィール画像 */
+.profileImage {
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* テキスト部分 */
+.introText p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* セクションのスタイル */
+.section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* セクションタイトル */
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border: 2px solid #333;
+  border-radius: 8px;
+  display: inline-block;
+  color: #333;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 640px) {
+  .title {
+    font-size: 1.5rem;
   }
-  
-  .list {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
-    margin-bottom: 80px;
-  }
-  
-  .list:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-  
-  .image {
-    width: 240px;
-    height: auto;
-    border-radius: var(--border-radius);
-  }
-  
-  .name {
+
+  .sectionTitle {
     font-size: 1.2rem;
-    font-weight: bold;
+  }
+
+  .introText p {
+    font-size: 1rem;
   }
   
-  .position {
-    margin-bottom: 8px;
+  .container {
+    padding: 15px;
   }
-  
-  .profile {
-    font-size: 0.9rem;
+
+  .introSection {
+    padding: 20px;
   }
-  
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: 1px solid var(--color-border);
-    padding-top: 40px;
-    text-align: center;
-    gap: 24px;
-  }
-  
-  .message {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  
-  .empty {
-    margin-bottom: 40px;
-  }
-  
-  @media (max-width: 640px) {
-    .text {
-      text-align: left;
-    }
-  
-    .list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 24px;
-    }
-  
-    .list:nth-child(even) {
-      flex-direction: column;
-    }
-  
-    .name {
-      text-align: center;
-    }
-  
-    .position {
-      text-align: center;
-    }
-  }
+}
