@@ -12,7 +12,7 @@ const blogPosts = await getMembersList({ limit : MEMBERS_LIST_LIMIT});
     <div className={styles.container}>
       {/* 自己紹介セクション */}
       <section className={styles.introSection}>
-        <h1 className={styles.title}>こんにちは！私の自己紹介ブログへようこそ</h1>
+        <h1 className={styles.title}>こんにちは！私の自己紹介ページへようこそ</h1>
         <div className={styles.introContent}>
           <Image
             src="/profile.jpg"  // プロフィール画像を設定
@@ -23,9 +23,10 @@ const blogPosts = await getMembersList({ limit : MEMBERS_LIST_LIMIT});
           />
           <div className={styles.introText}>
             <p>
-              こんにちは！私は[名前]です。このブログでは私の日常や趣味、考えをシェアしています。
-              私はプログラミング、旅行、音楽、映画が大好きです。日々の生活の中で気になったことや、
-              学んだことをここで書いていきますので、どうぞよろしくお願いします！
+              こんにちは！私は　大塚 由華　です。<br />
+              このページでは私が学んでいることや趣味を紹介しています。<br />
+              私は現在、専門学校で情報セキュリティについて学んでいます。<br />
+              どうぞよろしくお願いします！<br />
             </p>
           </div>
         </div>
