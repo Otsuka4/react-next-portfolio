@@ -8,3 +8,19 @@
       text-align: left;
     }
   }
+
+  .container {
+    background-color: white; /* 背景色を白に設定 */
+    padding: 40px; /* 白い背景の余白を大きくする */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* コンテンツを中央揃え */
+  }
+  
+  .contentWrapper {
+    max-width: 1200px; /* コンテンツの最大幅を設定（例：1200px） */
+    width: 100%; /* 幅を100%にして最大幅を活かす */
+    padding: 20px; /* さらに内側に余白を追加 */
+    box-sizing: border-box; /* パディングも幅に含める */
+  }
+  

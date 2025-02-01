@@ -9,10 +9,10 @@ export default function Page() {
         <h1 className={styles.title}>こんにちは！<br />私の自己紹介ページへようこそ</h1>
         <div className={styles.introContent}>
           <Image
-            src="/profile.jpg"  // プロフィール画像を設定
+            src="/Image.jpg"  // プロフィール画像を設定
             alt="プロフィール画像"
-            width={150}
-            height={150}
+            width={250}
+            height={180}
             className={styles.profileImage}
           />
           <div className={styles.introText}>
@@ -48,7 +48,7 @@ export default function Page() {
               <p>
                 趣味は、読書とゲーム、音楽を聴くことです。<br />
                 特に、ミステリー小説や長編小説が好きです。<br />
-                ゲームはホヨバースのゲーム、音楽はボカロやバンドなど色々聴いています。<br />
+                ゲームはホヨバースのゲーム、音楽はボカロやバンド系など色々聴いています。<br />
               </p>
             </div>
 

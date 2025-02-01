@@ -1,9 +1,20 @@
 /* 全体のレイアウト設定 */
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  background-color: white; /* 背景色を白に設定 */
+  padding: 40px; /* 白い背景の余白を大きくする */
+  min-height: 100vh; /* 画面全体の高さを確保 */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* コンテンツを中央揃え */
 }
+
+.contentWrapper {
+  max-width: 1200px; /* コンテンツの最大幅を設定（例：1200px） */
+  width: 100%; /* 幅を100%にして最大幅を活かす */
+  padding: 20px; /* さらに内側に余白を追加 */
+  box-sizing: border-box; /* パディングも幅に含める */
+}
+
 
 /* 自己紹介セクション */
 .introSection {
