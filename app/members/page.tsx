@@ -31,6 +31,7 @@ export default function Page() {
               職業：専門学生<br />
               学校名：京都デザイン&テクノロジー専門学校<br />
               学んでいること：情報セキュリティ<br />
+              専攻：ホワイトハッカー専攻<br />
               趣味：読書、ゲーム、音楽鑑賞<br />
               </p>
             </div>
@@ -60,6 +61,21 @@ export default function Page() {
                 AI900<br />
                 Microsoft Office Specialist Excel<br />
                 Microsoft Office Specialist PowerPoint<br />
+                </p>
+              </div>
+
+              <div className={styles.section}>
+              <h2 className={styles.sectionTitle}>製作した物</h2>
+              <p>
+                自己紹介ページ<br />
+                <a href= "https://otsuka4.github.io/about-me/" >https://otsuka4.github.io/about-me/</a><br />
+                <br />
+                ポケモン図鑑<br />
+                <a href= "https://otsuka4.github.io/react-pokemon-zukan/" >https://otsuka4.github.io/react-pokemon-zukan/</a>
+                <br />
+                <br />
+                Intel企業プロジェクト<br />
+                <img src="/intel.png" alt="Intel企業プロジェクト" width="200" height="300" />
                 </p>
               </div>
           </div>
