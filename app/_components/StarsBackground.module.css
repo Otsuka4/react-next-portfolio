@@ -8,6 +8,7 @@
     overflow: hidden;
   }
   
+  /* 星の点滅 */
   .star {
     position: absolute;
     width: 2px;
@@ -24,6 +25,33 @@
     }
     50% {
       opacity: 1;
+    }
+  }
+  
+  /* ======= 流れ星のアニメーション ======= */
+  .shootingStar {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 8px white;
+    opacity: 0.8;
+    transform: rotate(-45deg);
+    animation: shootingStarAnimation 2s linear infinite;
+  }
+  
+  @keyframes shootingStarAnimation {
+    0% {
+      transform: translate(100vw, -10vh) rotate(-45deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-10vw, 100vh) rotate(-45deg);
+      opacity: 0;
     }
   }
   
