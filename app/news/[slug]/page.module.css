@@ -5,3 +5,18 @@
     margin-top: 80px;
     padding-top: 40px;
 }
+
+/* page.module.css */
+.container {
+    background-color: aliceblue;
+    height: 130vh;
+    padding: 30px;
+  }
+  
+  @media (max-width: 640px) {
+    .container {
+        background-color: aliceblue;
+        height: 70vh;
+        padding: 30px;
+    }
+  }
