@@ -74,8 +74,7 @@ export default function Page() {
                 <a href= "https://otsuka4.github.io/react-pokemon-zukan/" >https://otsuka4.github.io/react-pokemon-zukan/</a>
                 <br />
                 <br />
-                Intel企業プロジェクト<br />
-                <img src="/intel.png" alt="Intel企業プロジェクト" width="200" height="300" />
+                Intel企業プロジェクト作成中<br />
                 </p>
               </div>
           </div>
