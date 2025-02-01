@@ -6,6 +6,15 @@
     padding: 80px;
     border-radius: 8px;
   }
+
+.container2 {
+    background-color: aliceblue;
+    height: 130vh;
+    padding: 30px;
+  }
+  
+
+  
   
   @media (max-width: 920px) {
     .container {
