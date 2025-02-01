@@ -3,10 +3,43 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.203);
+  background-color: black;
   color: #fff;
   overflow: hidden;
   padding: 200px 0;
+  height: 50vh; /* 画面全体をカバー */
+}
+
+/* 星のコンテナ */
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+}
+
+/* 星のスタイル */
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+/* 星の点滅アニメーション */
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 .title {
@@ -52,6 +85,7 @@
   right: -40px;
   bottom: -40px;
 }
+
 
 @media (max-width: 640px) {
   .top {
